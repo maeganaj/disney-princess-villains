@@ -10,15 +10,30 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #3e3e3e;
+    background-color: #0d0d0d;
     font-family: Bebas Neue;
   }
+
+.container{
+  width: 100%;
+
+}
+
+.container .main-card{
+  width: 200%;
+  display: flex;
+  justify-content: space-evenly;
+  transition: all 1s ease;
+}
+
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
 
 .card {
   position: relative;
   width: 384px;
   height: 360px;
-  margin: 20px;
 }
 
 .card .face {
@@ -33,7 +48,6 @@
 
 .card .front {
   transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000;
 }
 
 .card .front img {
@@ -51,7 +65,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 5px 10px #000;
 }
 
 .card .back p{
@@ -66,3 +79,44 @@
 .card:hover .back{
   transform: perspective(600px) rotateY(360deg);
 }
+
+.button{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+.button label{
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  margin: 0 4px;
+  border-radius: 20px;
+  transition:  all .5s ease;
+}
+
+.button label.active{
+  width: 35px;
+}
+
+#one:checked ~ .button label.one{
+  width:35px;
+}
+
+#two:checked ~ .button label.two{
+  width:35px;
+}
+
+#two:checked ~ .button label.one{
+  width: 15px;
+}
+
+#one:checked ~ .button label.two{
+  width:15px;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+
