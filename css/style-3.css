@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: 'Bebas Neue';
-    src:url('fonts/BebasNeue-Regular.woff2') format('woff2'),
-    url('fonts/BebasNeue-Regular.woff') format('woff');
+    src:url('css/fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('css/fonts/BebasNeue-Regular.woff') format('woff');
 }
   
 @font-face {
     font-family: 'Tahoma';
-    src: url('fonts/Tahoma.woff2') format('woff2'),
-        url('fonts/Tahoma.woff') format('woff');
+    src: url('css/fonts/Tahoma.woff2') format('woff2'),
+        url('css/fonts/Tahoma.woff') format('woff');
 }
 
 
