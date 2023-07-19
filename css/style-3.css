@@ -4,12 +4,19 @@
     box-sizing: border-box;
   }
 
-  @font-face {
+@font-face {
     font-family: 'Bebas Neue';
     src:url('fonts/BebasNeue-Regular.woff2') format('woff2'),
     url('fonts/BebasNeue-Regular.woff') format('woff');
-  }
+}
   
+@font-face {
+    font-family: 'Tahoma';
+    src: url('fonts/Tahoma.woff2') format('woff2'),
+        url('fonts/Tahoma.woff') format('woff');
+}
+
+
   body{
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +44,7 @@ img{
 }
 
 .title p{
-  font-family: Tahoma;
+  font-family: 'Tahoma';
   font-size: 12px;
   padding-bottom: 20px;
   font-style: italic;
